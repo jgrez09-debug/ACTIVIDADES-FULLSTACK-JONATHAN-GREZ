@@ -1,0 +1,135 @@
+/* Est base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ECF0F1;  
+  color: #2D3436;             
+}
+
+/* Contenedor principal centrado */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* header */
+.site-header {
+  background-color: #1E8449;   
+  color: #ffffff;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 2px solid #145A32;   
+}
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.site-header .tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #D5F5E3;        
+}
+
+/* principales */
+section {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #DADFE1;   
+}
+
+/* Tx */
+h2 {
+  margin-top: 0;
+  color: #1E8449;             
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Lista de puntos destacados */
+.highlights ul {
+  padding-left: 20px;
+}
+
+.highlights li {
+  margin-bottom: 8px;
+}
+
+/* Imagen y descripción */
+.image-section figure {
+  margin: 0;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;
+  border-radius: 6px;
+  border: 2px solid #DADFE1;   
+}
+
+.image-section figcaption {
+  font-size: 0.9rem;
+  color: #555555;
+  text-align: center;
+}
+
+/* Pie de página */
+.site-footer {
+  background-color: #1E8449;   
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid #145A32;   
+}
+
+/* cajas*/
+.intro,
+.highlights,
+.image-section {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .page {
+    padding: 16px;
+  }
+
+  .site-header,
+  section,
+  .site-footer {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .image-section img {
+    border-width: 1px;
+  }
+}
