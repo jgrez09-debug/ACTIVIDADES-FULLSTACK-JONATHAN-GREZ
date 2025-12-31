@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta Bar Interactiva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="app-bg">
+
+<nav class="navbar navbar-dark app-nav">
+  <span class="navbar-brand">🍸 Carta Bar Interactiva</span>
+  <span class="badge badge-warning">Actividad AE-6 by Jgrez</span>
+</nav>
+
+<header class="hero container">
+  <h1>Tu bar, tu selección favorita</h1>
+  <p>Marca tragos y picoteos como favoritos</p>
+</header>
+
+<div class="container">
+
+  <!-- CARRUSEL -->
+  <h3 class="section-title">Destacados del Bar</h3>
+
+  <div id="carouselBar" class="carousel slide mb-4" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/destacado1.jpg" class="d-block w-100" alt="Destacado 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/destacado2.jpg" class="d-block w-100" alt="Destacado 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/destacado3.jpg" class="d-block w-100" alt="Destacado 3">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselBar" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselBar" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="row">
+
+    <!-- CARTA -->
+    <div class="col-md-8">
+      <h3 class="section-title">Carta</h3>
+
+      <div class="row" id="listaItems">
+
+        <!-- ITEM -->
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="1" data-nombre="Mojito Clásico">
+            <img src="img/mojito.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Mojito Clásico</h5>
+              <p>Ron, menta, limón y soda.</p>
+              <button class="btn btn-outline-danger btn-fav" data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="2" data-nombre="Negroni">
+            <img src="img/negroni.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Negroni</h5>
+              <p>Gin, vermut rojo y Campari.</p>
+              <button class="btn btn-outline-danger btn-fav"data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="3" data-nombre="Cerveza Lager">
+            <img src="img/cerveza.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Cerveza Lager</h5>
+              <p>Bien fría.</p>
+              <button class="btn btn-outline-danger btn-fav"data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="4" data-nombre="Tabla Mixta">
+            <img src="img/tabla.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Tabla Mixta</h5>
+              <p>Quesos y picoteos.</p>
+              <button class="btn btn-outline-danger btn-fav"data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="5" data-nombre="Papas Rústicas">
+            <img src="img/papas.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Papas Rústicas</h5>
+              <p>Con alioli.</p>
+              <button class="btn btn-outline-danger btn-fav"data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card producto" data-id="6" data-nombre="Empanadas Cocktail">
+            <img src="img/empanadas.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Empanadas Caseras</h5>
+              <p>Queso, camaron y champiñon.</p>
+              <button class="btn btn-outline-danger btn-fav"data-toggle="tooltip" title="Agregar o quitar de favoritos">
+  ♡ Favorito
+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAVORITOS -->
+    <div class="col-md-4">
+      <h3 class="section-title">
+        Mis Favoritos <span id="contadorFav" class="badge badge-warning ml-2">0</span>
+        </h3>
+
+      <ul id="listaFavoritos" class="list-group"></ul>
+      <p id="sinFav" class="mt-2 text-muted">Aún no hay favoritos</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

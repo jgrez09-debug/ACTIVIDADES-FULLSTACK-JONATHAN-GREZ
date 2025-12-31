@@ -1,0 +1,166 @@
+
+:root {
+  --bg-main: #0b0f14;
+  --bg-card: #121823;
+  --bg-soft: #1a2130;
+  --text-main: #f3f4f6;
+  --text-muted: #9aa3b2;
+  --accent: #d4b16a;      
+  --danger: #dc3545;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 50% -200px, #151b29 0%, var(--bg-main) 60%);
+  color: var(--text-main);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.app-nav {
+  background: linear-gradient(180deg, #141a2a 0%, #0f1420 100%);
+  padding: 12px 24px;
+  border-bottom: 1px solid #1f2636;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+
+.hero {
+  padding: 40px 0 25px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.hero p {
+  color: var(--text-muted);
+}
+
+
+
+.section-title {
+  margin: 30px 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #222a3d;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+
+
+.card {
+  background: linear-gradient(180deg, #141a2a 0%, var(--bg-card) 100%);
+  border: 1px solid #1f2636;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card-body h5 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-body p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.producto {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+.producto.fav {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 1px rgba(220, 53, 69, 0.6),
+              0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+
+.btn-fav {
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-fav:hover {
+  transform: translateY(-1px);
+}
+
+
+
+.carousel-item img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+
+
+.list-group-item {
+  background: linear-gradient(180deg, #141a2a 0%, var(--bg-card) 100%) !important;
+  color: var(--text-main) !important;
+  border: 1px solid #1f2636;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.list-group-item:hover {
+  background: var(--bg-soft) !important;
+}
+
+
+
+#sinFav {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+
+#contadorFav {
+  background: linear-gradient(180deg, #f0c27b 0%, var(--accent) 100%);
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .carousel-item img {
+    height: 260px;
+  }
+}
