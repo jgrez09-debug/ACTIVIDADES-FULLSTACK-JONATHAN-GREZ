@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Jonathan Grez</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .profile-img{
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .reveal{
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.show{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#top">
+      <i class="bi bi-person-badge me-2"></i>Jonathan Grez
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCv">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navCv">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <button id="btnTheme" class="btn btn-outline-primary btn-sm ms-lg-3">
+        <i class="bi bi-moon-stars me-1"></i><span>Tema</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- HERO -->
+<header class="py-5">
+  <div class="container py-3">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-lg-4 text-center">
+        <img src="assets/profile.jpg" class="rounded-circle shadow-sm profile-img" alt="Foto de perfil">
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <div class="card shadow-sm">
+          <div class="card-body p-4">
+            <h1 class="display-6 mb-1">Jonathan Grez</h1>
+
+            <p class="text-secondary mb-3">
+              <i class="bi bi-geo-alt me-1"></i>Chile ·
+              <i class="bi bi-briefcase ms-2 me-1"></i>Desarrollo de Aplicaciones · Gestión
+            </p>
+
+            <p class="lead mb-3">
+              Profesional en formación como desarrollador de aplicaciones Full Stack Java, con sólida experiencia
+              en gestión administrativa, recursos humanos y emprendimiento, combinando visión técnica y de negocio.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="#contacto">
+                <i class="bi bi-envelope me-1"></i>Contactar
+              </a>
+              <a class="btn btn-outline-secondary" href="#experiencia">
+                <i class="bi bi-arrow-down me-1"></i>Ver experiencia
+              </a>
+              <a class="btn btn-outline-secondary" href="#">
+                <i class="bi bi-github me-1"></i>GitHub
+              </a>
+              <a class="btn btn-outline-secondary" href="#">
+                <i class="bi bi-linkedin me-1"></i>LinkedIn
+              </a>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-2">
+              <div class="col-12 col-md-4">
+                <div class="p-2 border rounded d-flex gap-2 align-items-center">
+                  <i class="bi bi-envelope text-primary"></i>
+                  <span>correo@ejemplo.com</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="p-2 border rounded d-flex gap-2 align-items-center">
+                  <i class="bi bi-telephone text-primary"></i>
+                  <span>+56 9 XXXX XXXX</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="p-2 border rounded d-flex gap-2 align-items-center">
+                  <i class="bi bi-globe text-primary"></i>
+                  <span>Chile</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SOBRE MI -->
+<section id="sobre-mi" class="py-5">
+  <div class="container">
+    <h2 class="h3 mb-4">Sobre mí</h2>
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="card shadow-sm reveal">
+          <div class="card-body p-4">
+            <p>
+              Profesional con experiencia en recursos humanos, administración y gestión de negocios,
+              actualmente enfocado en el desarrollo de aplicaciones.
+            </p>
+            <ul>
+              <li>Visión integral del negocio y la tecnología</li>
+              <li>Experiencia liderando equipos y operaciones</li>
+              <li>Aprendizaje continuo y adaptación</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-sm reveal">
+          <div class="card-body p-4">
+            <h3 class="h5">Objetivo profesional</h3>
+            <p class="text-secondary">
+              Integrar desarrollo de software con gestión y procesos, aportando soluciones tecnológicas
+              eficientes y aplicables a negocios reales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="py-5 bg-body-tertiary border-top border-bottom">
+  <div class="container">
+    <h2 class="h3 mb-4">Experiencia</h2>
+
+    <div class="card shadow-sm reveal mb-3">
+      <div class="card-body p-4">
+        <h3 class="h5">Empresario Individual</h3>
+        <p class="text-secondary mb-2">2012 – Actualidad</p>
+        <ul>
+          <li>Creación y administración de bares, discotecas y locales comerciales</li>
+          <li>Gestión contable básica, costos y presupuestos</li>
+          <li>Administración de recursos humanos y cumplimiento laboral</li>
+          <li>Optimización de procesos mediante tecnología</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card shadow-sm reveal">
+      <div class="card-body p-4">
+        <h3 class="h5">Analista de Recursos Humanos</h3>
+        <p class="text-secondary mb-2">HR Chilena Consolidada – Grupo Zurich (hasta 2012)</p>
+        <ul>
+          <li>Gestión administrativa de personal</li>
+          <li>Apoyo en remuneraciones y contratos</li>
+          <li>Cumplimiento de normativa laboral chilena</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMACION -->
+<section id="formacion" class="py-5">
+  <div class="container">
+    <h2 class="h3 mb-4">Formación</h2>
+
+    <div class="card shadow-sm reveal">
+      <div class="card-body p-4">
+        <h3 class="h5">Desarrollo de Aplicaciones Full Stack Java</h3>
+        <p class="text-secondary mb-2">En curso</p>
+        <p>
+          Formación orientada al desarrollo de aplicaciones completas, front-end y back-end,
+          integrando bases de datos y lógica de negocio.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="py-5 bg-body-tertiary border-top border-bottom">
+  <div class="container">
+    <h2 class="h3 mb-4">Habilidades</h2>
+
+    <div class="card shadow-sm reveal">
+      <div class="card-body p-4">
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge text-bg-primary">HTML</span>
+          <span class="badge text-bg-primary">CSS</span>
+          <span class="badge text-bg-primary">Bootstrap</span>
+          <span class="badge text-bg-primary">JavaScript</span>
+          <span class="badge text-bg-primary">Java (en formación)</span>
+          <span class="badge text-bg-primary">Contabilidad básica</span>
+          <span class="badge text-bg-primary">Recursos Humanos</span>
+          <span class="badge text-bg-primary">Gestión de negocios</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="h3 mb-4">Contacto</h2>
+
+    <div class="card shadow-sm reveal">
+      <div class="card-body p-4">
+        <p><strong>Email:</strong> correo@ejemplo.com</p>
+        <p><strong>Teléfono:</strong> +56 9 XXXX XXXX</p>
+        <p><strong>Ubicación:</strong> Chile</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 border-top text-center text-secondary">
+  © <span id="year"></span> Jonathan Grez
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  $("#year").text(new Date().getFullYear());
+
+  function setTheme(theme){
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    const btn = $("#btnTheme");
+    if(theme === "light"){
+      btn.removeClass("btn-outline-primary").addClass("btn-outline-dark");
+      btn.find("i").removeClass("bi-moon-stars").addClass("bi-sun");
+      btn.find("span").text("Claro");
+    } else {
+      btn.removeClass("btn-outline-dark").addClass("btn-outline-primary");
+      btn.find("i").removeClass("bi-sun").addClass("bi-moon-stars");
+      btn.find("span").text("Oscuro");
+    }
+  }
+
+  $("#btnTheme").on("click", function(){
+    const current = document.documentElement.getAttribute("data-bs-theme");
+    setTheme(current === "dark" ? "light" : "dark");
+  });
+
+  function revealCheck(){
+    const bottom = $(window).scrollTop() + $(window).height();
+    $(".reveal").each(function(){
+      if(bottom > $(this).offset().top + 80){
+        $(this).addClass("show");
+      }
+    });
+  }
+  $(window).on("scroll", revealCheck);
+  revealCheck();
+
+  setTheme("dark");
+</script>
+
+</body>
+</html>

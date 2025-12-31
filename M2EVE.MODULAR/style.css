@@ -1,0 +1,16 @@
+.profile-img{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Animación simple para "reveal" */
+.reveal{
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
+}
